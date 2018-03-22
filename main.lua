@@ -81,10 +81,15 @@ end
 questionObject = display.newText("", display.contentWidth/4, display.contentHeight/2, "Georgia", 80)
 questionObject:setTextColor(255/255, 255/255, 255/255)
 
--- create the correct text object and make itr invisible 
-correctObject = display.newText("Correct!", display.contentWidth/2, display.contentHeight*2/3, "Helvectia", 80)
+-- create the correct text object and make it invisible 
+correctObject = display.newText("Correct!", display.contentWidth/2, display.contentHeight*2/3, "Georgia", 80)
 correctObject:setTextColor(255/255, 255/255, 255/255)
 correctObject.isVisible = false
+
+-- create the correct text object and make it invisible 
+incorrectObject = display.newText("Incorrect.", display.contentWidth/2, display.contentHeight*2/3, "Georgia", 80)
+incorrectObject:setTextColor(255/255, 255/255, 255/255)
+incorrectObject.isVisible = false
 
 -- create numeric field
 numericField = native.newTextField(display.contentWidth/2, display.contentHeight/2, 150, 80)
